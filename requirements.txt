@@ -1,0 +1,8 @@
+certifi==2024.12.14
+distlib==0.3.9
+filelock==3.16.1
+packaging==24.2
+pipenv==2024.4.0
+platformdirs==4.3.6
+virtualenv==20.28.0
+openai
