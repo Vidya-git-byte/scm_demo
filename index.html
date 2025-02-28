@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Power BI & Streamlit Integration</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .container {
+            display: flex;
+            flex-direction: row; /* Side by side layout */
+            align-items: stretch;
+            gap: 10px;
+            height: 90vh; /* Full screen height */
+        }
+        .powerbi-container {
+            width: 80%;
+            min-width: 600px; /* Ensures Power BI stays large */
+        }
+        .streamlit-container {
+            width: 20%;
+            min-width: 300px; /* Ensures Streamlit is readable */
+        }
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 style="text-align: center;">Power BI & Streamlit Dashboard</h1>
+
+    <div class="container">
+        <!-- Power BI Report (80%) -->
+        <div class="powerbi-container">
+            <h2>Report</h2>
+            <iframe 
+                title="Sample Report"
+                src="https://app.powerbi.com/view?r=eyJrIjoiZDY4MTgyZTMtMDJlMS00MmQ4LThkMDgtZTRhMjQ1YTM1ZGUwIiwidCI6ImQyZjgwNDYyLWJmMjgtNDA1NS04ZWYzLTA4NWQ4ZTRiMmVkMCJ9"
+                allowFullScreen="true">
+            </iframe>
+        </div>
+
+        <!-- Streamlit App (20%) -->
+        <div class="streamlit-container">
+            <h2>Ask me!</h2>
+            <iframe 
+                title="Streamlit App"
+                src="https://cortexanalystpython38app.streamlit.app/"
+                allowFullScreen="true">
+            </iframe>
+        </div>
+    </div>
+
+</body>
+</html>
